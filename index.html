@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formulario de registro</title>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+	<h1>Fomulario de registro</h1>
+	<p>Por favor llena este formulario con la información requerida.</p>
+	<form action="https://register-demo.freecodecamp.org">
+		<fieldset>
+	    	<label>Ingresa tus nombres: <input type="text" name="txtNombres" required></label>
+	    	<label>Ingresa tus apellidos: <input type="text" name="txtApellidos" required></label>
+	    	<label>Ingresa tu e-mail: <input type="email" name="txtEmail" required></label>
+	  		<label>Crea una contraseña: <input type="password" name="txtPassword" pattern="[a-z0-5]{8,}" required></label>
+		</fieldset>
+		
+		<fieldset>
+			<label><input class="inline" type="radio" name="account-type" required> Cuenta personal</label>
+			<label><input class="inline" type="radio" name="account-type" required> Cuenta de negocios</label>
+			<label><input class="inline" type="checkbox" required> Acepto los <a href="https://www.freecodecamp.org/news/terms-of-service/">términos y condiciones.</a></label>
+		</fieldset>
+		
+		<fieldset>
+			<label>Sube una foto a tu perfil: <input type="file" name="foto"></label>
+			<label>¿Cuál es tu edad? (en años): <input type="number" name="edad" min="13" max="120"></label>
+			<label>¿Cómo te enteraste de nosotros? 
+				<select name="opcion">
+					<option value="">(seleccione una opción)</option>
+					<option value="1">Noticias</option>
+					<option value="2">Canal de YouTube</option>
+					<option value="3">Blog/foros</option>
+					<option value="4">Otro</option>
+				</select>
+			</label>
+			<label>A cerca de ti: <textarea cols="30" rows="3" name="bio" placeholder="Me gustaría escribir en la playa..."></textarea></label>
+		</fieldset>
+		<input type="submit" value="Enviar">
+</form>
+</body>
+</html>

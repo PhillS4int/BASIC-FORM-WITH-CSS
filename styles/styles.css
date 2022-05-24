@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	background-color: #1b1b32;/*Color del fondo*/
+	color: #f5f6f7;/*Color del texto*/
+	font-family: Tahoma;/*Tipo de fuente*/
+	font-size: 16px;/*Tamaño de la fuente*/
+}
+
+label{
+	display: block;
+	margin: 0.5rem 0;
+}
+
+h1, p{
+	text-align: center;
+	margin: 1em auto;
+}
+
+/*FORMULARIO*/
+form{
+	margin: 0 auto;
+	max-width: 500px;
+	width: 60vw;
+	min-width: 300px;
+	padding-bottom: 2em;
+}
+
+/*Campos del formulario*/ 
+fieldset{
+	border: none;/*Elimina los bordes de los fielsets con la propiedad 'none'*/
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+fieldset:not(last-of-type){
+	border-bottom: 3px solid #3b3b4f;/*Este parámetro agrega líneas para separar los campos (fieldsets)*/
+}
+
+input, textarea, select{
+	margin-top: 10px;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+	min-height: 2em;
+}
+
+.inline{
+	margin: 0 0.5em 0 0;
+	vertical-align: middle;
+	width: unset;/*Esto hace que el "width: 100%" no afecte a los 'radio buttons'*/
+}
+
+/*INPUTS Y ÁREA DE TEXTO*/
+input, textarea{
+	background-color: #0a0a23;/*Color del fondo*/
+	color: #ffffff;/*Color del texto*/
+	border: 1px solid #0a0a23;/*Ancho, tipo e borde y color*/
+			
+}
+
+/*BOTÓN DE ENVIAR*/
+input[type="submit"]{
+	display: block;/*Despliegue del botón*/
+	width: 60%;
+	min-width: 300px;
+	height: 2em;
+	font-size: 1.1rem;
+	margin: 1em auto;/*Ésta propiedad centra el botón*/
+	background-color: #3b3b4f;/*Color de fondo*/
+	border-color: white;/*Color del borde del botón*/
+}
+
+input[type="file"]{
+	padding: 1px 2px;
+}
+
+/*ENLACES*/
+a{
+	color: #dfdfe2;
+}
